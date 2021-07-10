@@ -27,9 +27,9 @@ int partition(int a[], int low, int hight){
 }
 
 int RandomPivotPartition(int a[], int low, int high){
-    int pivot, n, temp;
+    int pvt, n, temp;
     n = rand();
-    pivot = low + n%(high-low+1);
+    pvt = low + n%(high-low+1);
     swap(&a[high], &a[pivot]);
     return partition(a, low, high);
 }
